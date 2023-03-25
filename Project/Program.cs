@@ -12,3 +12,26 @@
 
 
 
+
+
+
+
+
+
+
+
+int InputNumber (string message) // Метод получение числа от пользователя.
+{
+    Console.Write(message);
+    int value;
+    if (int.TryParse(Console.ReadLine(), out value)) return value;
+    Console.WriteLine("Вы ввели не число");
+    Environment.Exit(1);
+    return 0;
+}
+
+string InputString(string message) // Метод получения строки от пользователя.
+{
+    Console.Write($"{message}");
+    return Console.ReadLine();
+}
