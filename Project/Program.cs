@@ -48,3 +48,19 @@ string [] CreateUserArray(int size) // Метод создания пользо�
     return array;
 }
 
+int SearchElements(string[] array, int max) // Метод поиска элементов массива.
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= max) count++;
+    }
+    return count;
+}
+
+string[] CreateArray(int size) // Метод создания одномерного массива.
+{
+    string[] array = new string[size];
+    return array;
+}
+
