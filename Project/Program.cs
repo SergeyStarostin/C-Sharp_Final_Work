@@ -10,15 +10,16 @@
 // [“1234”, “1567”, “-2”, computer science”] -> [“-2]
 // [“Russia”, “Denmark”, “Kazan”] - > [ ]
 
+int userArrayLength = InputNumber("Введите количество элементов массива: ");
+string[] userArray = CreateUserArray(userArrayLength);
+int maxElementLength = InputNumber("Введите число максимальной длины элементов нового массива: ");
+string[] newArray = CreateArray(SearchElements(userArray, maxElementLength));
 
-
-
-
-
-
-
-
-
+FillArray(newArray, userArray, maxElementLength);
+Console.WriteLine("Массив заданных элементов:");
+PrintArray(userArray);
+Console.WriteLine("Массив отсортированных элементов:");
+PrintArray(newArray);
 
 int InputNumber (string message) // Метод получение числа от пользователя.
 {
