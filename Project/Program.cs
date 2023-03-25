@@ -64,3 +64,17 @@ string[] CreateArray(int size) // Метод создания одномерно
     return array;
 }
 
+string[] FillArray(string[] newArray, string[] array, int max) // Метод заполнения массива элементами.
+{
+    int j = 0;
+    for (int k = 0; k < array.Length; k++)
+    {
+        
+        if (array[k].Length <= max)
+        {
+            newArray[j] = array[k];
+            j++;
+        }
+    }
+    return newArray;
+}
