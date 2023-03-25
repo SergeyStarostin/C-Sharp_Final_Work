@@ -35,3 +35,16 @@ string InputString(string message) // Метод получения строки
     Console.Write($"{message}");
     return Console.ReadLine();
 }
+
+string [] CreateUserArray(int size) // Метод создания пользователем одномерного массива из строк.
+{
+    string[] array = new string[size];
+    int element = 1;
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = InputString($"Введите {element} элемент массива: ");
+        element++;
+    }
+    return array;
+}
+
