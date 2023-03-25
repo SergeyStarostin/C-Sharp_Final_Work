@@ -78,3 +78,14 @@ string[] FillArray(string[] newArray, string[] array, int max) // Метод з�
     }
     return newArray;
 }
+
+void PrintArray(string[] array) // Метод вывода одномерного массива в консоль.
+{
+    Console.Write("{ ");
+    foreach (var item in array)
+    {
+        Console.Write($"{item}, ");
+    }
+    Console.Write("}");
+    Console.WriteLine();
+}
